@@ -41,20 +41,20 @@ choco_installed_packages:
     state: latest
     choco_args: --ignorechecksum
   # installs awscli, but won't update it
-  - awscli
+  # - awscli
   - Firefox
   - git
   - golang
-  - jre8
+  #- jre8
   - kubernetes-cli
   - microsoft-windows-terminal
-  - peazip
+  #- peazip
   - powertoys
   - python3
-  - sharex
-  - telegram
+  #- sharex
+  #- telegram
   - terraform
-  - vlc
+  #- vlc
   - vscode
   - zoom
 
