@@ -63,6 +63,8 @@ This playbook installs and configures most of the software I use on my Windows 1
 
 ## Installation
 
+### Prepare the 
+
 ### Prepare your Windows host ⏲
 
 #### **This playbook was tested on Windows 10 2004 and Windows 11 21H2 (Pro, Ent). Other versions may work but have not tried.**
