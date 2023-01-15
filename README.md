@@ -89,12 +89,15 @@ powershell.exe -ExecutionPolicy ByPass -File $file -Verbose
 
 2. Clone or download this repository to your local drive.
 3. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible collections.
-4. Add the IP address and credentials of your Windows machine into the `inventory` file
+4. Copy the inventory file and update it with the credentials
+```sh
+cp inventory my_inventory
+```
 5. Install `sshpass`
 ```sh
 sudo apt-get install sshpass
 ```
-6. Run `ansible-playbook main.yml` inside this directory.
+6. Run `ansible-playbook main.yml -i my_inventory` inside this directory.
 
 ### Running a specific set of tagged tasks
 
