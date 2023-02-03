@@ -40,22 +40,41 @@ choco_installed_packages:
   - name: Firefox
     state: latest
     choco_args: --ignorechecksum
-  # installs awscli, but won't update it
+  - 7zip
+  - advanced-ip-scanner
+# installs awscli, but won't update it
   # - awscli
+  - azure-cli
+  - bitwarden
+  - brave
+  - caffeine
+  - docker-desktop
+  - firacodenf
   - Firefox
   - git
+  - github-desktop
   - golang
+  - greenshot
+  - hackfont
+  - irfanview
   #- jre8
   - kubernetes-cli
+  - lens
   - microsoft-windows-terminal
   #- peazip
+  - pdk
   - powertoys
   - python3
   #- sharex
-  #- telegram
+  - sops
+  - sysinternals
+  - sumatrapdf
+  - telegram
+  - telegram.install
   - terraform
-  #- vlc
+  - vlc
   - vscode
+  - WhatsApp
   - zoom
 
 winget_packages:
