@@ -33,10 +33,8 @@ change_power_plan: true
 power_plan: "high_performance"
 
 choco_installed_packages:
-  # installs 2019.2.2.20191 version of the adobe reader
-  - name: adobereader
-    version: "2022.002.20191"
-  # installs latest version of the Firefox while ignoring the package checksum
+  - adobereader
+   # installs latest version of the Firefox while ignoring the package checksum
   - name: Firefox
     state: latest
     choco_args: --ignorechecksum
@@ -47,7 +45,7 @@ choco_installed_packages:
   - azure-cli
   - bitwarden
   - brave
-  - caffeine
+  # - caffeine
   - docker-desktop
   - firacodenf
   - Firefox
@@ -68,7 +66,7 @@ choco_installed_packages:
   #- sharex
   - sops
   - sysinternals
-  - sumatrapdf
+  # - sumatrapdf
   - telegram
   - telegram.install
   - terraform

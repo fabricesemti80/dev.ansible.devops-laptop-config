@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: "{{ targets }}" 
 
   vars_files:
     - default.config.yml
