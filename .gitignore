@@ -7,3 +7,4 @@ config.yml
 roles*
 hosts
 my_inventory
+inventories/win_dev_machine.yml

@@ -1,0 +1,11 @@
+#! rename me and put me into 'inventories' folder!
+#! use setup.ps1 to prepare the target system!
+win:
+  hosts:
+    laptop-win-fs:
+      ansible_host: < ip of computer >
+  vars:
+    ansible_connection: ssh
+    ansible_shell_type: cmd
+    ansible_user: ansible
+    ansible_password: < ansible user's password >
