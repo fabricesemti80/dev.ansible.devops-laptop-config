@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ targets }}" 
+- hosts: "{{ targets }}"
 
   vars_files:
     - default.config.yml
@@ -34,9 +34,9 @@
       when: install_windows_features
       tags: ["windows_features"]
 
-    - import_tasks: tasks/wsl2.yml
-      when: install_wsl2
-      tags: ["wsl"]
+    # - import_tasks: tasks/wsl2.yml
+    #   when: install_wsl2
+    #   tags: ["wsl"]
 
     - import_tasks: tasks/fonts.yml
       when: install_fonts

@@ -9,6 +9,10 @@
     stdin: echo $PROFILE
   register: powershell_profile_path
 
+- name: Debug PowerShell profile path
+  debug:
+    var: powershell_profile_path
+
 - name: Check if PowerShell directory exists.
   ansible.windows.win_file:
     path: "{{ powershell_profile_path.stdout.split(separator)[:-1] | join(separator) }}"

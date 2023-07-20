@@ -6,5 +6,5 @@ devops-dry:
 	-	@ansible-playbook main.yml -e targets=win --check --diff
 
 devops:
-	@echo " \e[0;35m ---> Building DEVOPS laptop [dry run] \e[0m "
+	@echo " \e[0;35m ---> Building DEVOPS laptop \e[0m "
 	-	@ansible-playbook main.yml -e targets=win
